@@ -244,7 +244,7 @@ section .header{
 .projects .card h4{
     margin-bottom: 1rem;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -252,10 +252,19 @@ section .header{
     color: #fff;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     border-bottom: 2px dashed #fff;
 }
+
+.projects .card h3 {
+    display: flex;       
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    color: #fff;
+}
+
 
 .projects .card p{
     color: #fff;
@@ -277,6 +286,16 @@ section .header{
 .projects .card button:hover{
     background-color: #1e40af;
     border-color: #1e40af;
+}
+
+.projects .card span{
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 5px;
 }
 
 footer {
