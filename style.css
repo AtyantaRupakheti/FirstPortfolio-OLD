@@ -354,6 +354,13 @@ footer .column > a:hover{
     color: #1d4ed8;
 }
 
+footer .column h3{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 .copyright{
     max-width: 1200px;
     margin: auto;
