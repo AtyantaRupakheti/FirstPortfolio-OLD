@@ -45,7 +45,7 @@
                 where I can continue to grow and make meaningful 
                 contributions.
             </p>
-            <button class="btn">Get Started</button>
+            <button class="btn">Hire Me!</button>
         </div>
         <div class="image">
             <img src="images/header.png">
@@ -315,36 +315,51 @@
             <p>
                 <span><i class="ri-phone-line"></i></span> (571)-287-1508
             </p>
-            <div class="socials">
-                <a href="#"><i class="ri-linkedin-box-line"></i></i></a>
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-github-line"></i></i></a>
-            </div>
-        </div>
-        <div class="column">
-            <h4>Company</h4>
-            <a href="#">Business</a>
-            <a href="#">Partnership</a>
-            <a href="#">Network</a>
-        </div>
-        <div class="column">
-            <h4>About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Channels</a>
-            <a href="#">Sponsors</a>
         </div>
         <div class="column">
             <h4>Contact</h4>
-            <a href="#">Contact Us</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions </a>
+            <form name="submit-to-google-sheet" class="contact-form">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>    
+            <span id="msg"></span>     
+        </div>
+        <div class="column">
+            <!--
+            <h4>Newsletter</h4>
+            <form action="subscribe.php" method="POST" class="newsletter-form">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            -->
         </div>
     </footer>
-
     <div class="copyright">
         Copyright © 2024 Atyanta Rupakheti. All Rights Reserved.
     </div>
 
     <script src="script.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyHHhNfpOdOX3LGpIUmBQ9OZjNXLv6rlX36n5O7v_7G0sJBHoVNMPuIuxcAlzK-AsEy/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000) // After 5 seconds the msg will be removed
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     outline: none;
@@ -8,21 +8,21 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 100%;
     display: flex;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #18181B;
 }
 
-nav{
+nav {
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
@@ -32,24 +32,24 @@ nav{
     gap: 2rem;
 }
 
-.nav-logo{
+.nav-logo {
     max-width: 100px;
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-.link a{
+.link a {
     position: relative;
     padding-bottom: 0.75rem;
     color: #fff;
 }
 
-.link a::after{
+.link a::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -60,11 +60,11 @@ nav{
     transition: all 0.3s ease;
 }
 
-.link a:hover::after{
+.link a:hover::after {
     width: 70%;
 }
 
-.btn{
+.btn {
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
@@ -74,23 +74,23 @@ nav{
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #1e40af;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
 }
 
-.blur{
+.blur {
     position: absolute;
     box-shadow: 0 0 1000px 50px #1d4ed8;
     z-index: -100;
 }
 
-header{
+header {
     position: relative;
     padding-top: 2rem;
     display: grid;
@@ -99,14 +99,14 @@ header{
     gap: 2rem;
 }
 
-header .content h4{
+header .content h4 {
     margin-bottom: 1rem;
     color: #ccc;
     font-size: 1rem;
     font-weight: 600;
 }
 
-header .content h1{
+header .content h1 {
     color: #fff;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -114,22 +114,22 @@ header .content h1{
     line-height: 4rem;
 }
 
-header .content h1 span{
+header .content h1 span {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
 
-header .content p{
+header .content p {
     margin-bottom: 2rem;
     color: #ccc;
 }
 
-header .image{
+header .image {
     position: relative;
 }
 
 /* This is for the big O that is there*/
-header .image::before{
+header .image::before {
     content: "O";
     position: absolute;
     top: 10; /* Change this for the O to be a little above, use negative*/
@@ -143,12 +143,12 @@ header .image::before{
     z-index: -100;
 }
 
-header .image img{
+header .image img {
     max-width: 600px;
     margin: auto;
 }
 
-section .header{
+section .header {
     margin-bottom: 1rem;
     color: #fff;
     text-align: center;
@@ -156,14 +156,14 @@ section .header{
     font-weight: 600;
 }
 
-.education{
+.education {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-.education .card{
+.education .card {
     background-color: #27272a;
     padding: 1rem;
     border: 2px solid transparent;
@@ -171,12 +171,12 @@ section .header{
     transition: all 0.3s ease;
 }
 
-.education .card:hover{
+.education .card:hover {
     background-color: #323232;
     border-color: #fff;
 }
 
-.education .card span{
+.education .card span {
     display: inline-block;
     background-color: #1e40af;
     padding: 2px 9px;
@@ -191,39 +191,39 @@ section .header{
     color: #fff;
     font-size: 1.2rem;
     font-weight: 630;
-    flex: 1; 
+    flex: 1;
 }
 
-.education .card p{
+.education .card p {
     color: #ccc;
     margin-bottom: 1rem;
 }
 
-.education .card a{
+.education .card a {
     color: #fff;
     transition: all 0.3s ease;
 }
 
-.education .card a:hover{
+.education .card a:hover {
     color: #1e40af;
 }
 
-.education .card h3{
+.education .card h3 {
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 0.9rem;
     font-weight: 700;
-    flex: 1; 
+    flex: 1;
 }
 
-.skills{
+.skills {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
-.skills .card{
+.skills .card {
     background-color: #27272a;
     padding: 1rem;
     border: 2px solid transparent;
@@ -231,12 +231,12 @@ section .header{
     transition: all 0.3s ease;
 }
 
-.skills .card:hover{
+.skills .card:hover {
     background-color: #323232;
     border-color: #fff;
 }
 
-.skills .card span{
+.skills .card span {
     display: inline-block;
     background-color: #1e40af;
     padding: 2px 9px;
@@ -246,42 +246,42 @@ section .header{
     border-radius: 5px;
 }
 
-.skills .card h4{
+.skills .card h4 {
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.skills .card p{
+.skills .card p {
     color: #ccc;
     margin-bottom: 1rem;
 }
 
-.skills .card a{
+.skills .card a {
     color: #fff;
     transition: all 0.3s ease;
 }
 
-.skills .card a:hover{
+.skills .card a:hover {
     color: #1e40af;
 }
 
-.sub-header{
+.sub-header {
     max-width: 600px;
     margin: auto;
     text-align: center;
     color: #ccc;
 }
 
-.projects{
+.projects {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-.projects .card{
+.projects .card {
     padding: 3rem 2rem;
     background-color: #27272a;
     display: flex;
@@ -291,24 +291,24 @@ section .header{
     transition: all 0.3s ease;
 }
 
-.projects .card:hover{
+.projects .card:hover {
     background-color: #323232;
     border-color: #fff;
 }
 
-.projects .card .content{
+.projects .card .content {
     flex: 1;
     margin-bottom: 2rem;
 }
 
-.projects .card h4{
+.projects .card h4 {
     margin-bottom: 1rem;
     color: #fff;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.projects .card h3{
+.projects .card h3 {
     color: #fff;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
@@ -318,37 +318,36 @@ section .header{
 }
 
 .projects .card h3 {
-    display: flex;       
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     color: #fff;
 }
 
-
-.projects .card p{
+.projects .card p {
     color: #fff;
-    margin-bottom: 0.75rem; 
+    margin-bottom: 0.75rem;
 }
 
-.projects .card p i{
+.projects .card p i {
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
-.projects .card button{
+.projects .card button {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
 }
 
-.projects .card button:hover{
+.projects .card button:hover {
     background-color: #1e40af;
     border-color: #1e40af;
 }
 
-.projects .card span{
+.projects .card span {
     display: inline-block;
     background-color: #1e40af;
     padding: 2px 9px;
@@ -365,23 +364,23 @@ footer {
     gap: 2rem;
 }
 
-footer .column .logo{
+footer .column .logo {
     max-width: 100px;
     margin-bottom: 2rem;
 }
 
-footer .column p{
+footer .column p {
     color: #ccc;
     margin-bottom: 2rem;
 }
 
-footer .column .socials{
+footer .column .socials {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-footer .column .socials a{
+footer .column .socials a {
     color: #ccc;
     border: 1px solid #ccc;
     padding: 5px 10px;
@@ -390,38 +389,38 @@ footer .column .socials a{
     transition: all 0.3s ease;
 }
 
-footer .column .socials a:hover{
+footer .column .socials a:hover {
     color: #fff;
     background-color: #1d4ed8;
     border-color: #1d4ed8;
 }
 
-footer .column h4{
+footer .column h4 {
     color: #fff;
     margin-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-footer .column > a{
+footer .column a {
     display: block;
     color: #ccc;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
 }
 
-footer .column > a:hover{
+footer .column a:hover {
     color: #1d4ed8;
 }
 
-footer .column h3{
+footer .column h3 {
     color: #fff;
     margin-bottom: 2rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-footer .column span{
+footer .column span {
     display: inline-block;
     background-color: transparent;
     padding: 2px 9px;
@@ -431,7 +430,41 @@ footer .column span{
     border-radius: 5px;
 }
 
-.copyright{
+footer .column form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .column form input,
+footer .column form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1f1f23;
+    color: #fff;
+}
+
+footer .column form input::placeholder,
+footer .column form textarea::placeholder {
+    color: #888;
+}
+
+footer .column form button {
+    padding: 0.75rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .column form button:hover {
+    background-color: #1e40af;
+}
+
+.copyright {
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
@@ -440,42 +473,49 @@ footer .column span{
     text-align: center;
 }
 
-@media (width < 900px){
-    .nav-links{
+@media (width < 900px) {
+    .nav-links {
         display: none;
     }
-    header{
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
-    header .image{
+    header .image {
         grid-area: 1/1/2/2;
     }
-    .skills{
+    .skills {
         grid-template-columns: repeat(2, 1fr);
     }
-    .projects{
+    .projects {
         grid-template-columns: repeat(2, 1fr);
     }
-    footer{
+    footer {
         grid-template-columns: 1fr 200px;
     }
 }
 
-@media (width < 600px){
-    header .image::before{
+@media (width < 600px) {
+    header .image::before {
         display: none;
     }
     
-    .skills{
+    .skills {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .projects{
+    .projects {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    footer{
+    footer {
         grid-template-columns: 1fr 150px;
     }
 }
 
+#msg {
+    color: #61b752;
+    font-size: 0.7rem;
+    margin-top: 10px;
+    margin-left: -8px;
+    display: block;
+}
